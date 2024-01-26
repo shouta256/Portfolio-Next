@@ -13,7 +13,7 @@ export default async function Home() {
 
       <h2 className='text-2xl font-bold'>Works</h2>
       <div className='all-project flex flex-wrap justify-between'>
-        {works.contents.map((item, index) => (
+        {works.contents.reverse().map((item, index) => (
           <div
             key={item.id}
             className='work my-5 bg-red-500 relative object-contain'

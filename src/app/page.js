@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import getWorks from '@/app/api';
+import { getList } from '@/libs/client';
 
 export default async function Home() {
-  const works = await getWorks();
+  const works = await getList();
 
   return (
     <div className='mx-7'>

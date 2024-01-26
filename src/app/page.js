@@ -16,8 +16,7 @@ export default async function Home() {
         {works.contents.map((item, index) => (
           <div
             key={item.id}
-            className='my-5 bg-red-500 relative object-contain'
-            style={{ width: 'calc(33% - 1rem)', height: '20vw' }}
+            className='work my-5 bg-red-500 relative object-contain'
           >
             <Link href={`/work/${item.id}`}>
               <Image
@@ -31,10 +30,13 @@ export default async function Home() {
                 className='absolute py-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center bg-white opacity-0 hover:opacity-100 transition-opacity duration-300 mb:py-3'
                 style={{ width: '75%', height: '14vw' }}
               >
-                <h2 className='text-black text-xl font-bold mb:text-base'>
+                <h2
+                  className='text-black text-4xl font-bold mb:text-xl'
+                  style={{ fontSize: '1.7vw' }}
+                >
                   {item.title}
                 </h2>
-                <p className='pt-3 text-lg mb:text-sm pt-1'>
+                <p className='mt-3 text-lg mb:text-sm '>
                   {item.kinds}
                   <br />
                   {item.tech}

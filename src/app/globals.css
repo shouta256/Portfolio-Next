@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.work {
+  width: calc(33% - 1rem);
+  height: 20vw;
+}
+
+@media (max-width: 1000px) {
+  .work {
+    flex: 0 0 calc(50% - 10px); /* 画面幅が1000px以下の場合、2つずつ横に並べる */
+    height: 30vw;
+  }
+}

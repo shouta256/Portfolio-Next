@@ -28,12 +28,17 @@ export default async function Home() {
                 height={500}
               />
               <div
-                className='absolute py-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center bg-white opacity-0 hover:opacity-100 transition-opacity duration-300'
+                className='absolute py-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center bg-white opacity-0 hover:opacity-100 transition-opacity duration-300 mb:py-3'
                 style={{ width: '75%', height: '14vw' }}
               >
-                <h2 className='text-black text-xl font-bold'>{item.title}</h2>
-                <p className='pt-3 text-lg'>{item.kinds}</p>
-                <p className=' pt-1 text-lg'>{item.tech}</p>
+                <h2 className='text-black text-xl font-bold mb:text-base'>
+                  {item.title}
+                </h2>
+                <p className='pt-3 text-lg mb:text-sm pt-1'>
+                  {item.kinds}
+                  <br />
+                  {item.tech}
+                </p>
               </div>
             </Link>
           </div>

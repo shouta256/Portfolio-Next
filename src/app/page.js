@@ -19,39 +19,39 @@ export default async function Home() {
             className='my-5 bg-red-500 relative object-contain'
             style={{ width: 'calc(33% - 1rem)', height: '20vw' }}
           >
-            <Image
-              className='w-full h-full object-cover'
-              src={item.mainPicture.url}
-              alt={item.title}
-              width={500}
-              height={500}
-            />
-            <div
-              className='absolute py-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center bg-white opacity-0 hover:opacity-100 transition-opacity duration-300'
-              style={{ width: '75%', height: '14vw' }}
-            >
-              <h2 className='text-black text-lg font-bold'>{item.title}</h2>
-              <p className=' pt-3'>{item.tech}</p>
-            </div>
+            <Link href={`/work/${item.id}`}>
+              <Image
+                className='w-full h-full object-cover'
+                src={item.mainPicture.url}
+                alt={item.title}
+                width={500}
+                height={500}
+              />
+              <div
+                className='absolute py-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center bg-white opacity-0 hover:opacity-100 transition-opacity duration-300'
+                style={{ width: '75%', height: '14vw' }}
+              >
+                <h2 className='text-black text-xl font-bold'>{item.title}</h2>
+                <p className='pt-3 text-lg'>{item.kinds}</p>
+                <p className=' pt-1 text-lg'>{item.tech}</p>
+              </div>
+            </Link>
           </div>
         ))}
       </div>
 
+      {/* アバウト */}
       <h2 className=' pt-8 text-2xl font-bold'>About</h2>
-      <div style={{ display: 'flex' }}>
-        <div
-          className='flex rounded-full mt-4'
-          style={{ width: '300px', height: '100px' }}
-        >
-          <Image
-            className='rounded-full object-cover'
-            src='/me.jpg'
-            alt='セルフィー'
-            width={100}
-            height={100}
-          />
-        </div>
-        <div className=' mb-10'>
+      <div className='mt-8' style={{ display: 'flex' }}>
+        <Image
+          className='rounded-full object-cover'
+          style={{ width: '100px', height: '100px' }}
+          src='/me.jpg'
+          alt='セルフィー'
+          width={100}
+          height={100}
+        />
+        <div className=' ml-10 mb-10'>
           <h3 className='text-lg font-semibold mb-5'>スズキ　ショウタ</h3>
           <p className=' mr-3 text-base'>
             2004年生まれ。現役の高専生。2024年9月からアメリカの大学に編入予定。

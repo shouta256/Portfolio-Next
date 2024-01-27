@@ -1,19 +1,29 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getList } from '@/libs/client';
+import { Switch } from '@nextui-org/react';
+// import { useState } from 'react';
+import { getWork } from '@/app/api';
 
-export default async function Home() {
-  const works = await getList();
+export default function Home() {
+  const works = getWork();
+  console.log(getWork);
+
+  // const [isChecked, setIsChecked] = useState(false);
 
   return (
     <div className='mx-7'>
+      <Switch defaultSelected>Japanese</Switch>
+      {/* キャッチフレーズ */}
       <h1 className='text-[6vw] text-center my-20 overflow-hidden whitespace-nowrap tracking-wider'>
         Unconventional Normalcy
       </h1>
-
+      {/* Works */}
       <h2 className='text-2xl font-bold'>Works</h2>
       <div className='all-project flex flex-wrap justify-between'>
         {works.contents.reverse().map((item, index) => (
+          // globals.cssでstyleを適用
           <div
             key={item.id}
             className='work my-5 bg-red-500 relative object-contain'
@@ -27,16 +37,17 @@ export default async function Home() {
                 height={500}
               />
               <div
-                className='absolute py-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center bg-white opacity-0 hover:opacity-100 transition-opacity duration-300 mb:py-3'
-                style={{ width: '75%', height: '14vw' }}
+                className='background absolute py-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center bg-white opacity-0 hover:opacity-100 transition-opacity duration-300 mb:py-3'
+                style={{ width: '75%', height: '13vw' }}
               >
-                <h2
-                  className='text-black text-4xl font-bold mb:text-xl'
-                  style={{ fontSize: '1.7vw' }}
-                >
+                {/* global.cssでstyle適用 */}
+                <h2 className='workTitle text-black text-4xl font-bold mb:text-xl'>
                   {item.title}
                 </h2>
-                <p className='mt-3 text-lg mb:text-sm '>
+                <p
+                  className='workDesc mt-5 text-lg mb:text-sm '
+                  style={{ fontSize: '1.3vw' }}
+                >
                   {item.kinds}
                   <br />
                   {item.tech}
@@ -46,7 +57,6 @@ export default async function Home() {
           </div>
         ))}
       </div>
-
       {/* アバウト */}
       <h2 className=' pt-8 text-2xl font-bold'>About</h2>
       <div className='mt-8' style={{ display: 'flex' }}>

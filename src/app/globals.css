@@ -7,9 +7,25 @@
   height: 20vw;
 }
 
+.workDesc {
+  margin-top: 2vh;
+}
+
 @media (max-width: 1000px) {
   .work {
     flex: 0 0 calc(50% - 10px); /* 画面幅が1000px以下の場合、2つずつ横に並べる */
     height: 30vw;
+  }
+
+  .background {
+    height: 25vh;
+  }
+
+  .workTitle {
+    font-size: 2.2vw;
+  }
+
+  .workDesc {
+    font-size: 2vw;
   }
 }

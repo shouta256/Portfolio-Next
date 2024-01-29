@@ -22,7 +22,7 @@ export default async function Home() {
             key={item.id}
             className='work my-5 bg-red-500 relative object-contain'
           >
-            <Link href={`/work/English/${item.id}`}>
+            <Link href={`/work/${item.id}`}>
               <Image
                 className='w-full h-full object-cover'
                 src={item.mainPicture.url}

@@ -10,7 +10,9 @@ export default async function WorkEnglish({ params }) {
   return (
     <div className='m-4'>
       <div className='flex justify-between my-5'>
-        <h1 className='  mx-8 text-2xl font-extrabold'>{post.title_eng}</h1>
+        <h1 className='  mx-8 text-2xl font-extrabold'>
+          {parse(post.title_eng)}
+        </h1>
         <Link href='/' className='mr-8 text-xl font-light'>
           Back
         </Link>

@@ -2,17 +2,16 @@ import parse from 'html-react-parser';
 import { getDetail, getList } from '@/libs/client';
 import Image from 'next/image';
 import Link from 'next/link';
-import fff from '@/app/page';
 
-export default async function Work({ params }) {
+export default async function WorkEnglish({ params }) {
   const post = await getDetail(params.id);
   console.log(post);
 
   return (
     <div className='m-4'>
       <div className='flex justify-between my-5'>
-        <h1 className='  mx-8 text-2xl font-extrabold'>{post.title}</h1>
-        <Link href='../' className='mr-8 text-xl font-light'>
+        <h1 className='  mx-8 text-2xl font-extrabold'>{post.title_eng}</h1>
+        <Link href='/' className='mr-8 text-xl font-light'>
           Back
         </Link>
       </div>

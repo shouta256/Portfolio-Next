@@ -1,3 +1,4 @@
+'use server';
 import { getList } from '@/libs/client';
 
 export async function getWork() {

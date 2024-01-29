@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default async function WorkEnglish({ params }) {
   const post = await getDetail(params.id);
-  console.log(post);
+  console.log('workEnglishで受け取ったpost', post);
 
   return (
     <div className='m-4'>

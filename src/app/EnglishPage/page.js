@@ -3,9 +3,9 @@ import Link from 'next/link';
 import { getList } from '@/libs/client';
 import { Switch } from '@nextui-org/react';
 
-export default async function Home() {
+export default async function EnglishHome() {
   const works = await getList();
-
+  console.log('EnglishPageで受け取ったworks:', works);
   return (
     <div className='mx-7'>
       <Link href='/'>Japanese ver</Link>

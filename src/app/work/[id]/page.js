@@ -2,7 +2,6 @@ import parse from 'html-react-parser';
 import { getDetail, getList } from '@/libs/client';
 import Image from 'next/image';
 import Link from 'next/link';
-import fff from '@/app/page';
 
 export default async function Work({ params }) {
   const post = await getDetail(params.id);

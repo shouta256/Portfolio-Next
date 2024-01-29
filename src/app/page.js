@@ -1,20 +1,14 @@
-'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getList } from '@/libs/client';
 import { Switch } from '@nextui-org/react';
-// import { useState } from 'react';
-import { getWork } from '@/app/api';
 
-export default function Home() {
-  const works = getWork();
-  console.log(getWork);
-
-  // const [isChecked, setIsChecked] = useState(false);
+export default async function Home() {
+  const works = await getList();
 
   return (
     <div className='mx-7'>
-      <Switch defaultSelected>Japanese</Switch>
+      <Link href='EnglishPage'>English ver</Link>
       {/* キャッチフレーズ */}
       <h1 className='text-[6vw] text-center my-20 overflow-hidden whitespace-nowrap tracking-wider'>
         Unconventional Normalcy
@@ -22,7 +16,7 @@ export default function Home() {
       {/* Works */}
       <h2 className='text-2xl font-bold'>Works</h2>
       <div className='all-project flex flex-wrap justify-between'>
-        {works.contents.reverse().map((item, index) => (
+        {works.contents.map((item, index) => (
           // globals.cssでstyleを適用
           <div
             key={item.id}

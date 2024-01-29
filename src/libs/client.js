@@ -1,3 +1,5 @@
+'use server';
+
 import { createClient } from 'microcms-js-sdk';
 
 // ブログの型定義

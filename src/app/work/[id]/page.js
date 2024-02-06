@@ -16,7 +16,7 @@ export default async function Work({ params }) {
         </Link>
       </div>
       <h2 className=' mb-8 mx-2 text-xl text-center font-semibold'>
-        {parse(post.description)}
+        {parse(post.description_eng)}
       </h2>
       {post.pictures.map((item, index) => (
         <div

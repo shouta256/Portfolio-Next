@@ -33,7 +33,7 @@ const getList = async (queries) => {
 const getDetail = async (contentId, queries) => {
   // console.log(client);
   const detailData = await client.getListDetail({
-    endpoint: 'works', // 作品一覧のエンドポイントに変更
+    endpoint: 'portfolio', // 作品一覧のエンドポイントに変更
     contentId,
     queries,
   });

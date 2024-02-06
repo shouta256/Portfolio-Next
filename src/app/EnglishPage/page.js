@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { getList } from '@/libs/client';
-import { Switch } from '@nextui-org/react';
+import { Switch } from '@/app/EnglishPage/workEnglish/[id]';
 
 export default async function EnglishHome() {
   const works = await getList();
@@ -22,7 +22,7 @@ export default async function EnglishHome() {
             key={item.id}
             className='work my-5 bg-red-500 relative object-contain'
           >
-            <Link href={`/workEnglish/${item.id}`}>
+            <Link href={`@/app/EnglishPage/workEnglish/${item.id}`}>
               <Image
                 className='w-full h-full object-cover'
                 src={item.mainPicture.url}

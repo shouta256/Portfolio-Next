@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { getList } from '@/libs/client';
-import { Switch } from '@/app/EnglishPage/workEnglish/[id]';
 
 export default async function EnglishHome() {
   const works = await getList();

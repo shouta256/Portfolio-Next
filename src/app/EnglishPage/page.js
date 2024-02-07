@@ -17,7 +17,7 @@ export default async function EnglishHome() {
       {/* Works */}
       <h2 className='text-2xl font-bold'>Works</h2>
       <div className='all-project flex flex-wrap justify-between'>
-        {works.contents.map((item, index) => (
+        {works.contents.reverse().map((item, index) => (
           // globals.cssでstyleを適用
           <div
             key={item.id}

@@ -6,11 +6,9 @@ import { Switch } from '@nextui-org/react';
 export default async function Home() {
   const works = await getList();
 
-  console.log('worksの中身', works);
-
   return (
     <div className='mx-7'>
-      <Link href='EnglishPage'>English ver</Link>
+      <Link href='EnglishPage'>Go to English ver</Link>
       {/* キャッチフレーズ */}
       <h1 className='text-[6vw] text-center my-20 overflow-hidden whitespace-nowrap tracking-wider'>
         Unconventional Normalcy

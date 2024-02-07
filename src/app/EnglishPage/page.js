@@ -7,7 +7,7 @@ export default async function EnglishHome() {
   console.log('EnglishPageで受け取ったworks:', works);
   return (
     <div className='mx-7'>
-      <Link href='/'>Japanese ver</Link>
+      <Link href='/'>Go to Japanese ver</Link>
       {/* キャッチフレーズ */}
       <h1 className='text-[6vw] text-center my-20 overflow-hidden whitespace-nowrap tracking-wider'>
         Unconventional Normalcy
@@ -62,15 +62,15 @@ export default async function EnglishHome() {
           height={100}
         />
         <div className=' ml-10 mb-10'>
-          <h3 className='text-lg font-semibold mb-5'>スズキ　ショウタ</h3>
+          <h3 className='text-lg font-semibold mb-5'>Shota Suzuki</h3>
           <p className=' mr-3 text-base'>
-            2004年生まれ。現役の高専生。2024年9月からアメリカの大学に編入予定。
-            <br />
-            学校で学んだことをアウトプットするため、留学費を貯めるためフリーランスを始めました。
-            <br />
-            学生など関係なく実直にクライアントと向き合い、責任を持って取り組みます。
-            <br />
-            実績を積むため提示価格の６割で承ります。
+            A Japanese individual born in 2004, hailing from Japan, attended a
+            National Institute of Technology from the age of 15 to 19. During
+            this time, they studied the fundamentals of computer science. While
+            enrolled, they participated in business contest - which is the
+            biggest Japanese competition where high school students think of
+            business ideas and received recognition, achieving a Top 100 award
+            among 5000 submissions.
           </p>
           <p className='mt-2'>CONTACT:shouta160618@gmail.com</p>
         </div>

@@ -8,7 +8,9 @@ export default async function Home() {
 
   return (
     <div className='mx-7'>
-      <Link href='EnglishPage'>Go to English ver</Link>
+      <Link href='EnglishPage' className=' text-xl m-3'>
+        Go to English ver
+      </Link>
       {/* キャッチフレーズ */}
       <h1 className='text-[6vw] text-center my-20 overflow-hidden whitespace-nowrap tracking-wider'>
         Unconventional Normalcy

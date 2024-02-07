@@ -67,12 +67,13 @@ export default async function EnglishHome() {
           <h3 className='text-lg font-semibold mb-5'>Shota Suzuki</h3>
           <p className=' mr-3 text-base'>
             A Japanese individual born in 2004, hailing from Japan, attended a
-            National Institute of Technology from the age of 15 to 19. During
-            this time, they studied the fundamentals of computer science. While
-            enrolled, they participated in business contest - which is the
+            National Institute of Technology from the age of 15 to 19.
+            <br /> During this time, they studied the fundamentals of computer
+            science. <br />
+            While enrolled, they participated in business contest - which is the
             biggest Japanese competition where high school students think of
-            business ideas and received recognition, achieving a Top 100 award
-            among 5000 submissions.
+            business ideas and received recognition, <br />
+            achieving a Top 100 award among 5000 submissions.
           </p>
           <p className='mt-2'>CONTACT:shouta160618@gmail.com</p>
         </div>

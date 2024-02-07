@@ -71,9 +71,10 @@ export default async function EnglishHome() {
             <br /> During this time, they studied the fundamentals of computer
             science. <br />
             While enrolled, they participated in business contest - which is the
-            biggest Japanese competition where high school students think of
-            business ideas and received recognition, <br />
-            achieving a Top 100 award among 5000 submissions.
+            biggest Japanese competition
+            <br /> where high school students think of business ideas and
+            received recognition, achieving a Top 100 award among 5000
+            submissions.
           </p>
           <p className='mt-2'>CONTACT:shouta160618@gmail.com</p>
         </div>

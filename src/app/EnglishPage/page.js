@@ -7,7 +7,7 @@ export default async function EnglishHome() {
   console.log('EnglishPageで受け取ったworks:', works);
   return (
     <div className='mx-7'>
-      <Link href='/' className=' text-xl m-3 text-right'>
+      <Link href='/' className=' text-xl m-3 flex-row-reverse'>
         Go to Japanese ver
       </Link>
       {/* キャッチフレーズ */}

@@ -19,7 +19,7 @@ const client = createClient({
 // ブログ一覧を取得
 const getList = async (queries) => {
   const listData = await client.getList({
-    endpoint: 'works',
+    endpoint: 'portfolioå',
     queries,
   });
 

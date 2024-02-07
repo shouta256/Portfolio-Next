@@ -2,14 +2,6 @@
 
 import { createClient } from 'microcms-js-sdk';
 
-// ブログの型定義
-const Blog = {
-  id: String,
-  title: String,
-  content: String,
-  eyecatch: Object, // 仮の型。実際の型は MicroCMSImage に依存します
-};
-
 // API取得用のクライアントを作成
 const client = createClient({
   serviceDomain: process.env.SERVICE_DOMAIN,
@@ -45,5 +37,4 @@ module.exports = {
   client,
   getList,
   getDetail,
-  Blog,
 };

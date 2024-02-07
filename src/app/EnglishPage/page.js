@@ -7,9 +7,12 @@ export default async function EnglishHome() {
   console.log('EnglishPageで受け取ったworks:', works);
   return (
     <div className='mx-7'>
-      <Link href='/' className=' text-xl m-3 flex-row-reverse'>
-        Go to Japanese ver
-      </Link>
+      <div className='flex'>
+        <Link href='/' className=' text-xl m-3 flex-row-reverse'>
+          Go to Japanese ver
+        </Link>
+      </div>
+
       {/* キャッチフレーズ */}
       <h1 className='text-[6vw] text-center my-20 overflow-hidden whitespace-nowrap tracking-wider'>
         Unconventional Normalcy

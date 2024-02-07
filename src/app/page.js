@@ -8,7 +8,7 @@ export default async function Home() {
 
   return (
     <div className='mx-7'>
-      <Link href='EnglishPage' className=' text-xl m-3'>
+      <Link href='EnglishPage' className=' text-xl m-3 text-right'>
         Go to English ver
       </Link>
       {/* キャッチフレーズ */}

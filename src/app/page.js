@@ -41,7 +41,7 @@ export default async function Home() {
                   {item.title}
                 </h2>
                 <p
-                  className='workDesc mt-5 text-lg mb:text-sm '
+                  className='workDesc mt-5 text-lg mb:text-sm leading-6'
                   style={{ fontSize: '1.3vw' }}
                 >
                   {item.kinds}

@@ -107,6 +107,9 @@
   .changeLang {
     font-size: 3vw;
   }
+  .projectAbout {
+    opacity: 1;
+  }
   .workTitle {
     margin-top: 5px;
     font-size: 2vw;

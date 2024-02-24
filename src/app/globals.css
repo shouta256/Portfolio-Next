@@ -2,30 +2,125 @@
 @tailwind components;
 @tailwind utilities;
 
+.changeLang {
+  font-size: 1.8vw;
+}
+
 .work {
+  margin: 0 auto;
+  margin-bottom: 10px;
   width: calc(33% - 1rem);
   height: 20vw;
 }
 
+@media (max-width: 600px) {
+  .work {
+    width: calc(50% - 1rem); /* 2つ横並びにするために50%に設定 */
+  }
+}
+
+.catchPhrase {
+  text-align: center;
+  margin: 25% auto;
+  overflow: hidden; /* テキストがはみ出さないように隠す */
+  white-space: nowrap; /* テキストを一行に保つ */
+  letter-spacing: 0.1em; /* 文字間隔を調整 */
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.subtitle {
+  margin-bottom: 15px;
+  font-size: 2.5vw;
+}
+
+.projectAbout {
+  position: absolute;
+  width: 70%;
+  height: 14vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 0.5s;
+  display: flex;
+  flex-direction: column; /* 縦方向に配置 */
+  justify-content: center; /* 水平方向に中央に配置 */
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.touchDeviceStyle {
+  opacity: 1;
+}
+
+.nonTouchDeviceStyle:hover {
+  opacity: 1; /* ホバー時にopacityを1に設定して表示 */
+}
+
+.workTitle {
+  font-size: 1.7vw;
+  line-height: 3.5vw;
+  font-weight: 700;
+}
+
 .workDesc {
   margin-top: 2vh;
+  font-size: 1.3vw;
+  line-height: 25px;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+}
+
+.aboutDescContainer {
+  margin: 0 10px 40px 40px;
+}
+
+.myName {
+  font-size: 2vw;
+  font-weight: 550;
+}
+
+.myDesc {
+  margin-top: 10px;
+  font-size: 1.5vw;
+}
+
+.myContact {
+  margin-top: 5px;
+  font-size: 1.5vw;
 }
 
 @media (max-width: 1000px) {
-  .work {
-    flex: 0 0 calc(50% - 10px); /* 画面幅が1000px以下の場合、2つずつ横に並べる */
-    height: 30vw;
+  .catchPhrase {
+    font-size: 5.5vw;
   }
+}
 
-  .background {
-    height: 25vh;
+@media (max-width: 550px) {
+  .changeLang {
+    font-size: 3vw;
   }
-
   .workTitle {
-    font-size: 2.2vw;
-  }
-
-  .workDesc {
+    margin-top: 5px;
     font-size: 2vw;
+    line-height: 1.3vw;
+  }
+  .workDesc {
+    font-size: 1.3vw;
+    line-height: 10px;
+  }
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+  .aboutDescContainer {
+    margin-bottom: 10px;
   }
 }

@@ -126,4 +126,8 @@
   .aboutDescContainer {
     margin-bottom: 10px;
   }
+  .myDesc {
+    margin-top: 10px;
+    font-size: 1.8vw;
+  }
 }

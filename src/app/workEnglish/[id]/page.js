@@ -12,11 +12,11 @@ export default async function WorkEnglish({ params }) {
         <h1 className='  mx-8 text-2xl font-extrabold'>
           {parse(post.title_eng)}
         </h1>
-        <Link href='EnglishPage' className='mr-8 text-xl font-light'>
+        <Link href='/' className='mr-8 text-xl font-light'>
           Back
         </Link>
       </div>
-      <h2 className=' mb-8 mx-2 text-xl text-center font-semibold'>
+      <h2 className=' mb-4 mx-2 text-xl text-center font-medium'>
         {parse(post.description_eng)}
       </h2>
       <div>

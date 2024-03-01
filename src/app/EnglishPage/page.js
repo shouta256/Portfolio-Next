@@ -18,7 +18,7 @@ export default async function Home() {
       <div className='all-project flex flex-wrap justify-between mb-11'>
         {works.contents.reverse().map((item) => (
           <div key={item.id} className='work my-5 relative object-contain'>
-            <Link href={`/work/${item.id}`}>
+            <Link href={`/workEnglish/${item.id}`}>
               <Image
                 className='w-full h-full object-cover'
                 src={item.mainPicture.url}

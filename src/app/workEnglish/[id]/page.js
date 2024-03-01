@@ -1,11 +1,10 @@
 import parse from 'html-react-parser';
-import { getDetail, getList } from '@/libs/client';
+import { getDetail } from '@/libs/client';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default async function WorkEnglish({ params }) {
   const post = await getDetail(params.id);
-  console.log('workEnglishで受け取ったpost', post);
 
   return (
     <div className='m-4'>
@@ -13,13 +12,22 @@ export default async function WorkEnglish({ params }) {
         <h1 className='  mx-8 text-2xl font-extrabold'>
           {parse(post.title_eng)}
         </h1>
-        <Link href='/' className='mr-8 text-xl font-light'>
+        <Link href='EnglishPage' className='mr-8 text-xl font-light'>
           Back
         </Link>
       </div>
       <h2 className=' mb-8 mx-2 text-xl text-center font-semibold'>
         {parse(post.description_eng)}
       </h2>
+      <div>
+        <Link
+          href={post.url}
+          className=' mb-8 text-xl text-center font-semibold mx-auto'
+        >
+          Go to the Web Site
+        </Link>
+      </div>
+
       {post.pictures.map((item, index) => (
         <div
           key={item.url}

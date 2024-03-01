@@ -54,7 +54,7 @@ export default async function Home() {
           height={100}
         />
         <div className='aboutDescContainer'>
-          <h3 className='myName'>スズキ　ショウタ</h3>
+          <h3 className='myName'>Shota Suzuki</h3>
           <p className='myDesc'>
             A Japanese individual born in 2004, hailing from Japan, attended a
             National Institute of Technology from the age of 15 to 19.

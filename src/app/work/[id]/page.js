@@ -18,15 +18,13 @@ export default async function Work({ params }) {
 			<h2 className=" mb-8 mx-2 text-xl text-center font-semibold">
 				{parse(post.description)}
 			</h2>
-			<h3>
-				<div className="flex items-center justify-center">
-					<h3>
-						<Link href={post.url} className="text-blue-600 underline">
-							リンクへのアクセスはこちらから
-						</Link>
-					</h3>
-				</div>
-			</h3>
+			<div className="flex items-center justify-center">
+				<h3>
+					<Link href={post.url} className="text-blue-600 underline">
+						リンクへのアクセスはこちらから
+					</Link>
+				</h3>
+			</div>
 			{post.pictures.map((item, index) => (
 				<div
 					key={item.url}

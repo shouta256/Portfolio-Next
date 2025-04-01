@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: #fafafa; /* やわらかめの薄グレー */
+}
+
 .changeLang {
   font-size: 1.8vw;
 }
